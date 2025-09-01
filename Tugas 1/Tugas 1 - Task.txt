@@ -1,0 +1,21 @@
+Tugas 1: Energy Data Analyst: Monitoring and Optimization of Renewables
+Dataset: dataset_tugas_1_energy_data.csv
+
+📝 Bagian 1 – Statistik Deskriptif
+1. Hitung mean, median, standar deviasi untuk:
+   - Irradiance (kWh/m²)
+   - Temperature (°C)
+   - Humidity (%)
+   - Solar Output (MWh)
+2. Visualisasikan histogram untuk salah satu variabel.
+3. Buat boxplot Solar Output untuk melihat apakah ada outlier.
+📝 Bagian 2 – Data Cleaning & Outlier
+1. Identifikasi missing values pada setiap kolom.
+2. Coba strategi penanganan:
+   - Hapus baris dengan data hilang
+   - Atau isi dengan rata-rata (mean) / interpolasi
+3. Deteksi outlier menggunakan boxplot.
+4. Putuskan bagaimana menanganinya (hapus, winsorize, atau biarkan untuk dianalisis).
+📝 Bagian 3 – Hubungan Antar Variabel
+1. Buat correlation matrix untuk semua variabel numerik (Irradiance, Temperature, Humidity, Solar Output).
+2. Interpretasi hasil korelasi: variabel mana yang paling kuat hubungannya dengan Solar Output?
