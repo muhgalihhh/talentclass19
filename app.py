@@ -1,4 +1,5 @@
 import streamlit as st
+
 from Tugas_1 import tugas1_ui
 
 # Jika ada tugas lain, import juga modulnya
@@ -15,3 +16,4 @@ if tugas == 'Tugas 1':
 elif tugas == 'Tugas 2 (coming soon)':
     st.title('Tugas 2')
     st.info('Dokumentasi Tugas 2 akan segera tersedia.')
+yes
