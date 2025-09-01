@@ -16,4 +16,3 @@ if tugas == 'Tugas 1':
 elif tugas == 'Tugas 2 (coming soon)':
     st.title('Tugas 2')
     st.info('Dokumentasi Tugas 2 akan segera tersedia.')
-yes
