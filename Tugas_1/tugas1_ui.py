@@ -1,4 +1,5 @@
 import matplotlib
+
 matplotlib.use('Agg')  # Set backend for Streamlit Cloud compatibility
 import matplotlib.pyplot as plt
 import numpy as np
@@ -8,11 +9,9 @@ import streamlit as st
 
 
 def run():
-    # Set page config for better UI
-    st.set_page_config(page_title="Energy Data Analysis", layout="wide")
-    
     # Main title with emoji and styling
-    st.title("🔋 Energy Data Analyst: Monitoring and Optimization of Renewables")
+    st.title("🔋 Tugas 1: Energy Data Analysis")
+    st.markdown("**Monitoring and Optimization of Renewables**")
     st.markdown("---")
     
     # Load data with progress indicator

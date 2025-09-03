@@ -1,0 +1,60 @@
+Tentu, berikut adalah ekstraksi teks dari dokumen "Tugas 2 Guidelines (Basic Forecasting).pdf":
+
+### [cite_start]**Praktik Forecasting Energi Surya: Linear & Multivariable Regression [cite: 1]**
+
+* [cite_start]**Durasi:** ±1 jam [cite: 2]
+* [cite_start]**Dataset:** forecasting\_dataset.csv [cite: 3]
+
+#### [cite_start]**Tujuan [cite: 4]**
+* [cite_start]Memahami penerapan regresi linear untuk forecasting [cite: 5]
+* [cite_start]Menambahkan variabel waktu sebagai fitur prediktif [cite: 6]
+* [cite_start]Membangun model regresi multivariat [cite: 7]
+* [cite_start]Mengevaluasi performa model dengan metrik statistik [cite: 8]
+
+#### [cite_start]**Deskripsi Dataset [cite: 9]**
+[cite_start]Tabel berikut berisi deskripsi setiap kolom dalam dataset[cite: 10]:
+
+| Kolom | Deskripsi |
+| :--- | :--- |
+| Date | Tanggal pencatatan data (format harian) |
+| Irradiance | Intensitas radiasi matahari $(kWh/m^{2})$ |
+| Temperature | Suhu lingkungan $(^{\circ}C)$ |
+| Humidity | Kelembaban lingkungan (%) |
+| Solar Output | Output energi surya aktual (MWh) |
+
+---
+
+### [cite_start]**Bagian 1 - Regresi Linear Sederhana [cite: 11]**
+[cite_start]**Tujuan:** Memprediksi Solar Output berdasarkan Irradiance [cite: 16]
+* [cite_start]Buka dataset di Excel[cite: 12].
+* [cite_start]Buat scatter plot antara Irradiance (X) dan Solar Output (Y)[cite: 13].
+* [cite_start]Tambahkan Trendline pada grafik dan aktifkan opsi: tampilkan persamaan regresi dan R² value[cite: 14].
+* [cite_start]Catat persamaan regresi dan nilai R² untuk evaluasi kekuatan hubungan[cite: 15].
+
+### [cite_start]**Bagian 2 - Tambah Fitur Waktu [cite: 17]**
+[cite_start]**Tujuan:** Mengetahui apakah waktu punya pengaruh terhadap output [cite: 21]
+* [cite_start]Dari kolom Date, ekstrak Day Number (misal: 1, 2, 3,...)[cite: 18].
+* [cite_start]Ulangi proses regresi linear dengan X: Day Number dan Y: Solar Output[cite: 19].
+* [cite_start]Catat dan bandingkan nilai R2[cite: 20].
+
+### [cite_start]**Bagian 3 - Regresi Multivariat [cite: 22]**
+[cite_start]**Tujuan:** Meningkatkan akurasi dengan banyak variabel [cite: 28]
+* [cite_start]Gunakan fitur: Irradiance, Temperature, dan Humidity sebagai prediktor[cite: 23].
+* [cite_start]Gunakan Tools > Data Analysis > Regression di Excel (aktifkan Add-ins Analysis ToolPak)[cite: 24].
+* [cite_start]Masukkan Input Y Range: Solar Output, dan Input X Range: seluruh fitur[cite: 25].
+* [cite_start]Centang 'Labels' jika kolom punya judul[cite: 26].
+* [cite_start]Interpretasi output regresi: Koefisien, R2, Adjusted R2, dan p-value masing-masing fitur[cite: 27].
+
+### [cite_start]**Bagian 4 - Evaluasi Model [cite: 29]**
+**Tujuan:** Mengukur keakuratan hasil prediksi model
+* [cite_start]Hitung metrik performa: MAE (Mean Absolute Error), RMSE (Root Mean Squared Error), MAPE (Mean Absolute Percentage Error)[cite: 30, 31].
+* [cite_start]Tambahkan kolom Prediksi dan Error = Predicted - Actual jika perlu[cite: 32].
+* [cite_start]Gunakan fungsi AVERAGE, ABS, dan SQRT untuk menghitung metrik performa[cite: 33].
+
+---
+
+#### [cite_start]**Output yang Diharapkan [cite: 34]**
+* [cite_start]Persamaan regresi dan visualisasi scatter plot [cite: 35]
+* [cite_start]Tabel hasil regresi multivariat (koefisien, R2, p-value) [cite: 36]
+* [cite_start]Ringkasan evaluasi model (MAE, RMSE, MAPE) [cite: 37]
+* [cite_start]Interpretasi singkat: fitur mana yang paling penting? [cite: 38]
